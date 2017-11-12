@@ -6,7 +6,5 @@ applications:
   name: fca-server
   host: fca-server
   disk_quota: 1024M
-declared-services:
-  database-cloudantNoSQLDB:
-    label: cloudantNoSQLDB
-    plan: Lite
+  services:
+  - database
