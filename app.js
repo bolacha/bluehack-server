@@ -85,7 +85,7 @@ function initDBConnection() {
 
 initDBConnection();
 
-app.use('/', express.static(path.join(__dirname, '../build')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 function createResponseData(id, name, value, attachments) {
 
