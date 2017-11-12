@@ -1,11 +1,12 @@
----
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: fca-server
+  host: fca-server
+  disk_quota: 1024M
 declared-services:
   database-cloudantNoSQLDB:
     label: cloudantNoSQLDB
     plan: Lite
-applications:
-- name: fca-server
-  random-route: false
-  memory: 256M
-  services:
-  - database-cloudantNoSQLDB
